@@ -1,0 +1,89 @@
+
+
+<html>
+
+	<head>
+		<script type="text/javascript" src="fun1.js">
+		</script>
+		<script>
+		
+			var x,y,z;
+			x = Number(document.getElementById("num1").value)
+			y = Number(document.getElementById("num2").value)
+			function sayman()
+			{				
+				alert("Hello Soura")
+				//document.write("Hello Soura")
+			}
+			
+			function adder()
+			{	
+				x = Number(document.getElementById("num1").value)
+				y = Number(document.getElementById("num2").value)							
+				z = x + y;				
+				document.getElementById("ans").value = z;
+			}
+			
+			function mul()
+			{
+				x = Number(document.getElementById("num1").value)
+				y = Number(document.getElementById("num2").value)
+				z = x*y;
+				document.getElementById("ans").value = z;
+			}
+			
+			function comp()
+			{
+				x = Number(document.getElementById("num1").value)
+				y = Number(document.getElementById("num2").value)
+			
+				if(x>y)
+					document.getElementById("ans").value =  String(x) + " is greater than " + String(y)
+				else if(x<y)
+					document.getElementById("ans").value =  String(x) + " is less than " + String(y)
+				else
+					document.getElementById("ans").value =  x + " is equal to " + String(y)
+			}
+			
+			var prop;
+			document.write("Navigator props here....<br/>");
+			for(prop in navigator)
+			{
+				document.write(prop);
+				document.write("<br />");
+			}	
+			
+			
+		</script>
+	</head>
+
+	<body>
+		Enter number1 : <input id="num1">
+		Enter number2 : <input id="num2">
+		<br>
+		<button onclick="adder()"> Add </button>								 
+		<br>
+		<br>
+		<button onclick="mul()"> Multiply </button>
+		<br>
+		<button onclick="comp()"> Compare </button>
+		<br>
+		Output  <input id="ans">	
+		<br>
+		<br>
+		<br>
+		<script>
+			var prop;
+			document.write("Navigator props here....<br/>");
+			for(prop in navigator)
+			{
+				document.write(prop);
+				document.write("<br />");
+			}	
+
+		</script>
+			
+	</body>
+</html>
+
+
